@@ -20,6 +20,7 @@ For detailed instructions, see:
 5. Restart ArchiveSpace. You should see 'AV Space' in the plugins menu.
 
 Example:
+
      mv avspace.zip archivesspace/plugins/
      cd archivesspace/plugins
      unzip avspace.zip -d avspace
