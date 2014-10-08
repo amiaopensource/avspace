@@ -2,3 +2,10 @@ en:
   plugins:
     avspace:
       label: AV Space
+  enumerations:
+    container_type:
+      video_cartridge : Video Cartridge
+      videocassette: Videocassette
+      videodisc: Videodisc
+      videotape_reel: Videotape Reel
+      other: Other
