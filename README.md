@@ -3,6 +3,10 @@ avspace
 
 ArchivesSpace Plugin for AV Materials
 
+## What is this?
+
+Read the project wiki: https://github.com/amiaopensource/avspace/wiki 
+
 
 ## Getting Started
 
