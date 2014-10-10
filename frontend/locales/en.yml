@@ -4,8 +4,16 @@ en:
       label: AV Space
   enumerations:
     container_type:
-      video_cartridge : Video Cartridge
+      video_cartridge: Video Cartridge
       videocassette: Videocassette
       videodisc: Videodisc
       videotape_reel: Videotape Reel
       other: Other
+    extent_extent_type:
+      duration: Duration
+  extent_duration:
+    hours: Hours
+    minutes: Minutes
+    seconds: Seconds
+  extent_number:
+    number: Number

@@ -1,0 +1,4 @@
+<% if ['accessions', 'resources', 'archival_objects', 'digital_objects', 'digital_object_components'].include?(controller.controller_name) && ['edit', 'new', 'create'].include?(controller.action_name) %>
+  <%= javascript_include_tag "#{@base_url}/assets/extent_duration.js" %>
+<% end %>
+

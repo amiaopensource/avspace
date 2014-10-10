@@ -1,0 +1,30 @@
+<% define_template "extent", jsonmodel_definition(:extent) do |form| %>
+  <div class="subrecord-form-fields">
+    <%= form.label_and_select("portion", form.possible_options_for("portion", true)) %>
+    <%= form.label_and_select("extent_type", form.possible_options_for("extent_type", true)) %>
+    <%form.emit_template("extent_number") %>
+    <hr/>
+    <%= form.label_and_textarea("container_summary") %>
+    <%= form.label_and_textarea("physical_details") %>
+    <%= form.label_and_textarea("dimensions") %>
+  </div>
+<% end %>
+
+<% define_template "extent_number", jsonmodel_definition(:extent) do |form| %>
+  <div class="inline-subform extent-subform">
+    <%= form.label_and_textfield("number") %>
+    <%= form.hidden_input("hours") %>
+    <%= form.hidden_input("minutes") %>
+    <%= form.hidden_input("seconds") %>
+  </div>
+<% end %>
+
+
+<% define_template "extent_duration", jsonmodel_definition(:extent) do |form| %>
+  <div class="inline-subform extent-subform">
+    <%= form.label_and_textfield("hours") %>
+    <%= form.label_and_textfield("minutes") %>
+    <%= form.label_and_textfield("seconds") %>
+    <%= form.hidden_input("number") %>
+  </div>
+<% end %>
